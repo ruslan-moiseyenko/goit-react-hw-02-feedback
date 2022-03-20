@@ -1,5 +1,4 @@
 import React from 'react';
-// import Feedback from './feedback/Feedback';
 import Section from './feedback/Section';
 import FeedbackOptions from './feedback/FeedbackOptions';
 import Statistics from './feedback/Statistics';
@@ -10,18 +9,6 @@ class App extends React.Component {
     neutral: 0,
     bad: 0,
   };
-
-  // handleGood = () => {
-  //   this.setState({ good: this.state.good + 1 });
-  // };
-
-  // handleNeutral = () => {
-  //   this.setState({ neutral: this.state.neutral + 1 });
-  // };
-
-  // handleBad = () => {
-  //   this.setState({ bad: this.state.bad + 1 });
-  // };
 
   handleButtonClick = option => {
     this.setState({ [option]: this.state[option] + 1 });

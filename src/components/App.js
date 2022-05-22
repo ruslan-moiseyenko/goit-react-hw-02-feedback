@@ -9,7 +9,6 @@ class App extends React.Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    buttonsNamesArray: ['good', 'neutral', 'bad'],
   };
 
   handleButtonClick = option => {
@@ -31,7 +30,7 @@ class App extends React.Component {
       <>
         <Section title="Please leave your feedback">
           <FeedbackOptions
-            options={this.state.buttonsNamesArray}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.handleButtonClick}
           />
         </Section>
